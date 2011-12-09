@@ -29,6 +29,8 @@ alias glg='git log --stat --max-count=5'
 compdef _git glg=git-log
 alias glgg='git log --graph --max-count=5'
 compdef _git glgg=git-log
+alias gll='git log --pretty=oneline --abbrev-commit --graph --decorate'
+compdef _git gll=git-log
 alias gss='git status -s'
 compdef _git gss=git-status
 alias ga='git add'
