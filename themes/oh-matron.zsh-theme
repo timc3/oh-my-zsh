@@ -2,7 +2,7 @@
 #          FILE: oh-matron.zsh-theme
 #   DESCRIPTION: oh-my-zsh theme file, based on smt by Stephen Tudor, based on dogenpunk by Matthew Nelson.
 #        AUTHOR: Tim Child
-#       VERSION: 0.1
+#       VERSION: 0.2
 #    SCREENSHOT: coming soon
 # -----------------------------------------------------------------------------
 
@@ -31,6 +31,10 @@ function prompt_char() {
   hg root >/dev/null 2>/dev/null && echo "%{$fg_bold[red]%}☿%{$reset_color%}" && return
   echo "%{$fg[cyan]%}◯%{$reset_color%}"
 }
+
+# Format Tabs and Windows
+ZSH_THEME_TERM_TITLE_IDLE="%n@%m: %~"
+ZSH_THEME_TERM_TAB_TITLE_IDLE="%m: %15<..<%~%<<"
 
 # Colors vary depending on time lapsed.
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_SHORT="%{$fg[green]%}"
