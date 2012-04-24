@@ -13,6 +13,10 @@ fpath=($ZSH/functions $ZSH/completions $fpath)
 # TIP: Add files you don't want in git to .gitignore
 for config_file ($ZSH/lib/*.zsh) source $config_file
 
+# For some reason the edit command doesn't work after he 
+# keybindings so I am going to source it here.
+source $ZSH/lib/edit-command-line.zsh
+
 # Set ZSH_CUSTOM to the path where your custom config files
 # and plugins exists, or else we will use the default custom/
 if [[ -z "$ZSH_CUSTOM" ]]; then
